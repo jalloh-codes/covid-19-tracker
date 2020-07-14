@@ -8,7 +8,7 @@
 body{
  background-image: linear-gradient(0.25turn,
                  #cc75754d, #c8eac899, #0851f13b), 
-                  url('../public/images/covid2.jpg');
+                  url(./App/images/covid2.jpg);
   color: red;
   background-size: cover;
   background-repeat: no-repeat;
@@ -207,7 +207,7 @@ body{
     height: 300px;
   }
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 1366px){
   body{
     background-attachment: fixed;
     background-position: center;
@@ -249,8 +249,37 @@ body{
   canvas{
     margin-top: 4rem;
     margin-bottom: 1rem;
-    width: 500px;
+    width: 480px;
     height: 300px;
   }
+
+}
+
+@media screen and (min-width: 1367px){
+  .App {
+    .index{
+      .data-box {
+        .data{
+          .column-1{
+            width: 50%;
+            height: 33rem;
+          }
+          .column-2 {
+            width: 50%;
+            height: 33rem;
+          }
+         }
+       }
+    }
+  
+  }
+  canvas{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    width: 480px;
+    height: 300px;
+  }
+
+
 
 }

@@ -25,7 +25,7 @@ const HistogramData = (props) =>{
         <Histogram
         xLabels={labels}
         yValues={data}
-        width='550'
+        width='500'
         height='400'
         options={options}
         />
