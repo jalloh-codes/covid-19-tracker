@@ -1,0 +1,318 @@
+@mixin fixed {
+  height: 2em;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+body{
+ background-image: linear-gradient(0.25turn,
+                 #cc75754d, #c8eac899, #0851f13b), 
+                  url(/static/media/covid2.3af8fa7a.jpg);
+  color: red;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  li{
+    list-style: none;
+  }
+  canvas{
+    background-color: #ece9e969;
+
+  }
+  //linear-gradient(0.25turn, #3f87a652, #ebf8e1ad, #f69d3c29)
+  footer{
+    bottom: 0;
+    font-size: 25px;
+    display: inline;
+    text-align: center;
+    @include fixed();
+
+    a{
+      margin: 5px;
+      color: black;
+    }
+    i{
+      color: #000;
+    }
+  }
+}
+
+
+.App{
+  .index{
+    .date-box{
+      @include fixed();
+      text-align: center;
+      color: black;
+      font-size: 20px;
+      display: contents;
+      top: 0;
+    }
+    .data-box{
+      margin-top: 6rem;
+      width: auto;
+
+      .data{
+        display: inline-flex;
+        width: 100%;
+        margin-bottom: 10rem;
+        box-shadow: inset 19px -20px 0px 3px rgba(214, 214, 214, 0.25), 
+        10px 10px 10px 10px rgba(255, 255, 255, 0.22), 10px 10px 10px 10px rgba(0, 0, 255, .2),
+        10px 10px 10px 10px rgba(0, 0, 255, .2);
+        .column-1{
+          .heading{
+            margin-bottom: 17px;
+          }
+          text-align: -webkit-center;
+          overflow-y: scroll;
+          .table-box{
+            .table-div{
+              table{
+                border: 1px solid #000;
+                tr{
+                  border: 1px solid #000;
+                  th{
+                 
+                    border: 1px solid #000;
+                  }
+                  td{
+                 
+                    border: 1px solid #000;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .column-2{
+         
+          text-align: -webkit-center;
+         
+          .wraper{
+            .mini-cards-box{
+              display: inline-block;
+              .data-ul{
+                font-weight:700;
+                margin: 10px;
+                transition: 0.4s;
+                box-shadow: 5px 5px 30px 7px rgba(214, 214, 214, 0.25),
+                 -5px -5px 30px 7px rgba(255, 255, 255, 0.22);
+              }
+            }
+          }
+          button{
+            font-weight: 600;
+            background-color: #a0b7a6c7;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  body{
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .index{
+    .data-box{
+      .data{
+        display: flex;
+        flex-direction: column-reverse;
+        .column-1{
+          width: 100%;
+          height: 30rem;
+        }
+        .column-2{
+          width: 100%;
+          height: 30rem;
+          .wraper{
+            .mini-cards-box{
+              .data-ul{
+                font-size: 19px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+@media screen and(min-width: 1366px){
+  .column-1{
+    width: 50%;
+    height: 33rem;
+    .table-box{
+      font-size: 20px;
+      th{
+        padding: 10px;
+      }
+    }
+  }
+  .column-2{
+    width: 50%;
+    height: 33rem;
+    td{
+      padding: 10px;
+    }
+  }
+  canvas{
+    margin-top: 2rem;
+  }
+}
+@media screen and(min-width: 1024px){
+  body{
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .column-1{
+    width: 50%;
+    height: 33rem;
+  }
+  .column-2{
+    width: 50%;
+    height: 33rem;
+    .wraper{
+      .mini-cards-box{
+        .data-ul{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+
+  canvas{
+    width: 400px;
+    margin-top: 4rem;
+  }
+}
+
+@media screen and(min-width: 360px){
+
+  body{
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .column-1{
+    height: 25px;
+    .table-box{
+      font-size: 10px;
+      th{
+        padding: 3px;
+      }
+      td{
+        padding: 3px;
+      }
+
+    }
+  }
+  .column-2{
+    height: 20rem;
+  }
+
+  canvas{
+    margin-top: 3rem;
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 320px){
+  body{
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .index{
+    .data-box{
+      .data{
+        display: flex;
+        flex-direction: column-reverse;
+        .column-1{
+          width: 100%;
+          height: 33rem;
+          .table-box{
+            font-size: 10px;
+            font-weight: 800;
+            th{
+              padding: 2px;
+            }
+            td{
+              padding: 2px;
+            }
+          }
+
+        }
+        .column-2{
+          width: 100%;
+          height: 24rem;
+          .wraper{
+            .mini-cards-box{
+              .data-ul{
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  canvas{
+    margin-top: 2rem;
+    margin-bottom: rem;
+    width: 250px;
+    height: 300px;
+  }
+
+}
+@media screen and (max-width: 823px){
+  body{
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .index{
+    .data-box{
+      .data{
+        display: flex;
+        flex-direction: column-reverse;
+        .column-1{
+          width: 100%;
+          height: 33rem;
+          .table-box{
+            font-size: 20px;
+            font-weight: 800;
+            th{
+              padding: 4px;
+            }
+            td{
+              padding: 4px;
+            }
+          }
+
+        }
+        .column-2{
+          width: 100%;
+          height: 25rem;
+          .wraper{
+            .mini-cards-box{
+              .data-ul{
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  canvas{
+    margin-top: 4rem;
+    margin-bottom: rem;
+    width: 450px;
+    height: 300px;
+  }
+
+}
