@@ -78,7 +78,9 @@ class Index extends Component{
                         <div  className="column-2">
                         <button onClick={this.toggleHidden.bind(this)}>Show past 30 days death rate
                         </button>
-                        {( !this.state.visible) && (
+                        { (!this.state.visible === true) ?
+
+    
                         <div className="wraper">
                             <div className="mini-cards-box">
                                 <MiniCards data={{key: 'Death', value: `${setData(this.props.usCurrent, 'death')}`}}/>
@@ -92,11 +94,11 @@ class Index extends Component{
                                 <MiniCards data={{key: 'Recovered', value: `${setData(this.props.usCurrent, 'recovered')}`}}/>
                                 <MiniCards data={{key: 'Negative', value: `${setData(this.props.usCurrent, 'negative')}`}}/>
                             </div>
-                        </div>)|| (                
+                        </div> :               
                         <div className="histogram">
                             <HistogramData xLabel={this.state.xLabel.slice(0, 30)} yLabel={this.state.yLabel.slice(0, 30)}/>
                         </div>
-                        )}
+                        }
                         </div>
                     </Row>
                 </Container>
