@@ -111,7 +111,10 @@ body{
   }
 }
 
-@media screen and (max-width: 768px){
+
+
+@media screen and (min-width: 320px) and (max-width: 500px){
+
   body{
     background-attachment: fixed;
     background-position: center;
@@ -124,117 +127,6 @@ body{
         .column-1{
           width: 100%;
           height: 30rem;
-        }
-        .column-2{
-          width: 100%;
-          height: 30rem;
-          .wraper{
-            .mini-cards-box{
-              .data-ul{
-                font-size: 19px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-}
-
-
-@media screen and(min-width: 1366px){
-  .column-1{
-    width: 50%;
-    height: 33rem;
-    .table-box{
-      font-size: 20px;
-      th{
-        padding: 10px;
-      }
-    }
-  }
-  .column-2{
-    width: 50%;
-    height: 33rem;
-    td{
-      padding: 10px;
-    }
-  }
-  canvas{
-    margin-top: 2rem;
-  }
-}
-@media screen and(min-width: 1024px){
-  body{
-    background-attachment: fixed;
-    background-position: center;
-  }
-  .column-1{
-    width: 50%;
-    height: 33rem;
-  }
-  .column-2{
-    width: 50%;
-    height: 33rem;
-    .wraper{
-      .mini-cards-box{
-        .data-ul{
-          font-size: 20px;
-        }
-      }
-    }
-  }
-
-
-  canvas{
-    width: 400px;
-    margin-top: 4rem;
-  }
-}
-
-@media screen and(min-width: 360px){
-
-  body{
-    background-attachment: fixed;
-    background-position: center;
-  }
-  .column-1{
-    height: 25px;
-    .table-box{
-      font-size: 10px;
-      th{
-        padding: 3px;
-      }
-      td{
-        padding: 3px;
-      }
-
-    }
-  }
-  .column-2{
-    height: 20rem;
-  }
-
-  canvas{
-    margin-top: 3rem;
-    width: 300px;
-    height: 300px;
-  }
-}
-@media screen and (max-width: 320px){
-  body{
-    background-attachment: fixed;
-    background-position: center;
-  }
-  .index{
-    .data-box{
-      .data{
-        display: flex;
-        flex-direction: column-reverse;
-        .column-1{
-          width: 100%;
-          height: 33rem;
           .table-box{
             font-size: 10px;
             font-weight: 800;
@@ -249,7 +141,7 @@ body{
         }
         .column-2{
           width: 100%;
-          height: 24rem;
+          height: 25rem;
           .wraper{
             .mini-cards-box{
               .data-ul{
@@ -261,15 +153,61 @@ body{
       }
     }
   }
+
   canvas{
-    margin-top: 2rem;
-    margin-bottom: rem;
-    width: 250px;
+    margin-top: 3rem;
+    width: 260px;
     height: 300px;
   }
-
 }
-@media screen and (max-width: 823px){
+@media screen and (min-width: 501px) and (max-width: 767px){
+
+  body{
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .index{
+    .data-box{
+      .data{
+        display: flex;
+        flex-direction: column-reverse;
+        .column-1{
+          width: 100%;
+          height: 30rem;
+          .table-box{
+            font-size: 15px;
+            font-weight: 800;
+            th{
+              padding: 2px;
+            }
+            td{
+              padding: 2px;
+            }
+          }
+
+        }
+        .column-2{
+          width: 100%;
+          height: 25rem;
+          .wraper{
+            .mini-cards-box{
+              .data-ul{
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  canvas{
+    margin-top: 3rem;
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 768px){
   body{
     background-attachment: fixed;
     background-position: center;
@@ -286,17 +224,17 @@ body{
             font-size: 20px;
             font-weight: 800;
             th{
-              padding: 4px;
+              padding: 5px;
             }
             td{
-              padding: 4px;
+              padding: 5px;
             }
           }
 
         }
         .column-2{
           width: 100%;
-          height: 25rem;
+          height: 30rem;
           .wraper{
             .mini-cards-box{
               .data-ul{
@@ -310,8 +248,8 @@ body{
   }
   canvas{
     margin-top: 4rem;
-    margin-bottom: rem;
-    width: 450px;
+    margin-bottom: 1rem;
+    width: 500px;
     height: 300px;
   }
 
