@@ -6,7 +6,7 @@ import {setData, stateNames, statesCase, concatenateObject, pushState} from '../
 import MiniCards from '../components/mini-card';
 import MiniTable from '../components/mini-table';
 import HistogramData from './histogram';
-import { Container, Row, Col} from 'reactstrap';
+import { Container, Row} from 'reactstrap';
 
 
 
@@ -78,7 +78,7 @@ class Index extends Component{
                         <div  className="column-2">
                         <button onClick={this.toggleHidden.bind(this)}>Show past 30 days death rate
                         </button>
-                        { !this.state.visible && 
+                        {( !this.state.visible && 
                         <div className="wraper">
                             <div className="mini-cards-box">
                                 <MiniCards data={{key: 'Death', value: `${setData(this.props.usCurrent, 'death')}`}}/>
@@ -96,7 +96,7 @@ class Index extends Component{
                         <div className="histogram">
                             <HistogramData xLabel={this.state.xLabel.slice(0, 30)} yLabel={this.state.yLabel.slice(0, 30)}/>
                         </div>
-                        }
+                        )}
                         </div>
                     </Row>
                 </Container>

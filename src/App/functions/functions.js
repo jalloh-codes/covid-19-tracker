@@ -34,20 +34,8 @@ export const setData = (data, ...search) =>{
         }
     }if(search.length >= 2){
         
-        // for(let [key, value] of Object.entries(data)){
-        //     if(key === search[0]){                 
-        //         obj[search[0]] = (`${value}`);
-        //     }
-        // }
-        // for(let [key, value] of Object.entries(data)){
-        //     if(key === search[1]){
-        //         obj[search[1]] = (`${value}`);
-        //     }
-            
-        // }
-        // array.push(obj);
         for (let index = 0; index < search.length; index++) {
-            let ob1 = filter(data, obj, search, index)
+            filter(data, obj, search, index);
         }
         return obj;
     }
@@ -87,12 +75,12 @@ export const statesCase = (data, ...name) =>{
 export const concatenateObject = (array1, array2) =>{
     let array= []
 
-    if(array1.length == array2.length){
+    if(array1.length === array2.length){
       for (let index = 0; index < array1.length; index++) {
           let obj1 =array1[index]
           let obj2  =array2[index]
            array.push(Object.assign(obj1, obj2))
-           //array.push(newObj);
+          
       }
       
     }
